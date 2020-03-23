@@ -1,2 +1,7 @@
-# uitwaaien6.github.io
-test website
+# The-News-Wind
+The News Wind my blog.
+
+Creating my first blog.
+Published due to midterm project from my University.
+
+non wordpress !

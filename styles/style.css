@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 12%;
+}
+
+.nav img {
+    position: absolute;
+    width: 17px;
+    margin-left: 19%;
+    margin-top: 0.3%;
+    cursor: pointer;
+}
+
+.logo {
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+nav input {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+nav a {
+    display: block;
+    width: 120px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.1s ease-in;
+}
+
+nav a:hover {
+    color: #3a3a3a;
+}
+
+.banner-area {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1501455798972-e374108fa04f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.banner-content {
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 15%;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+}
+
+@keyframes content {
+    from {
+        opacity: 0;
+        left: -50%;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes contentMac {
+    from {
+        opacity: 0;
+        left: -50%;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+.news-area, .about-area, .service-area, .contact-area {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.news-area {
+    padding-top: 70px;
+}
+
+.contact-area {
+    height: 500px;
+}
+
+.text-part {
+    width: 65%;
+    height: 95%;
+}
+
+.service-area .text-part p {
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.date {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Audiowide', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.news-area .image {
+    margin: 30px;
+}
+
+.news-area img {
+    width: 60%;
+}
+
+.text-part h2 {
+    margin-top: 0px;
+}
+
+#news-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 35px;
+    margin: 10px;
+    transition: all 0.2s ease;
+}
+
+#karisik {
+    width: 500px;
+    
+}
+
+#balikHali {
+    width: 450px;
+}
+
+#sanayiCimento {
+    width: 450px;
+}
+
+#balikKenan {
+    width: 300px;
+}
+
+#gidaLab2 {
+    width: 400px;
+    margin: 10px;
+}
+
+#balikKenanTezgah {
+    width: 300px;
+    
+}
+
+#gidaLabTemizlik {
+    width: 500px;
+}
+
+#zeytin {
+    width: 300px;
+}
+
+#biberTezgah {
+    width: 300px;
+}
+
+#kabak {
+    width: 300px;
+}
+
+.news-area, .service-area {
+    background-color: #fefefe;
+}
+
+.contact-area, .about-area {
+    background-color: #262626;
+    color: #fff;
+}
+
+.scroll {
+    background: black;
+}
+
+.about-area table {
+    margin-top: 50px;
+    background: white;
+    color: black;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.about-area table tr td {
+    padding: 10px;
+    padding-right: 150px;
+    border: 1px solid black;
+}
+
+.social-media-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.social-media-bar div {
+    margin-right: 20px;
+}
+
+.social-media-bar img {
+    color: white;
+    width: 40px;
+    transition: all 0.2s ease;
+}
+
+.legal {
+    float: left;
+    margin-left: 20%;
+    transition: all 0.3s ease;
+}
+
+.legal div {
+    margin-top: 20px;
+}
+
+.legal a {
+    color: rgb(146, 146, 146);
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.legal a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#copyright {
+    width: 20px;
+}
+
+.copyright {
+    clear: both;
+    margin-top: 25%;
+}
+
+@media only screen and (max-width: 1700px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .banner-content {
+        font-size: 20px;
+    }
+
+    nav a {
+        width: 100px;
+    }
+
+    .nav {
+        margin-right: 8%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 28px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    .banner-content {
+        font-size: 16px;
+    }
+
+    nav a {
+        font-size: 14px;
+        width: 80px;
+    }
+
+    .nav {
+        margin-right: 5%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .legal {
+        margin-left: 10%;
+    }
+}
